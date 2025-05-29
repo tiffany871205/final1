@@ -99,7 +99,7 @@ border-spacing: 0;
     max-width: 100%;
     height: 834px;
     max-height: 100%;
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true);
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true");
     background-size: cover;
     object-fit: cover;
     background-position: center center;
@@ -108,7 +108,7 @@ border-spacing: 0;
 .hero-content{
     width: 960px;
     height: auto;
-    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
     background-size: cover;
 }
 
@@ -417,32 +417,39 @@ p{
 
 @media (max-width: 600px){
 .wrapper{
-    width: 375px;
+    max-width: 375px;
     height:auto;
+    display: block;
 }
 
 .header{
-    width: 375px; 
-    height: 90px;
+    width: 100%; 
+    height: auto;
 }
 
 .hero{
-    width: 375px;
+    max-width: 100%;
     height: auto;
     display: block;
 }
 
 .hero-img{
-    width: 375px;
+    max-width: 100%;
     height: 375px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section.png?raw=true");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
 }
 
 .hero-content{
-    width: 375px;
-    height: 180px;
+    max-width: 100%;
+    height: auto;
     padding-left: 24px;
     padding-top:24px;
+    padding-bottom: 24px;
 }
+
 h1{
     font-size: 52px;
 }
@@ -454,20 +461,22 @@ h1{
 
 .banner{
     max-width: 375px;
-    height: 739px;
+    height: auto;
     display: block;
 }
 
 .banner-img{
     max-width: 100%;
     height: 375px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog/About%20Section.png?raw=true");
     background-size: cover;
     background-position: center;
+    margin-right: 0px;
 }
 
 .banner-content{
     width: 100%;
-    height: 375px;
+    height: auto;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 12px;
@@ -475,16 +484,30 @@ h1{
 }
 
 .banner-content ul{
+    max-width:100%;
+    height: auto;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
+.banner-content a{
+    max-width:100%;
+    height: auto;
+}
+
+.tag{
+    margin-top: 10px;
+}
+
 .blog{
-    max-width: 375px;
+    max-width: 100%;
     margin: 0 auto;
     background: #FBFBFB;
     padding-right: 12px;
     padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blog li ul{
@@ -495,39 +518,51 @@ h1{
 }
 
 .blog li{
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .blog li img{
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .i{
-    width: 375px;
+    max-width: 100%;
 }
   
 .search{
     margin: 0 auto;
-    max-width: 375px;
+    max-width: 100%;
     padding-top: 80px;
     padding-bottom: 40px;
     background: #FBFBFB;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 .outline{
-    width: 351px;
+    width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
 }
 
 .search input{
-    width: 300px;
+    width: 70%;
 }
 
 .page{
-    max-width: 375px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-wrap: wrap;
+}
+
+.page-ul{
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .footer{
