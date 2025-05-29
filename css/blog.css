@@ -365,11 +365,9 @@ p{
     margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-left: 312px;
-    padding-right: 312px;
     background: #FBFBFB;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-top: solid 1px #6C757D;
 }
