@@ -186,6 +186,7 @@ time{
     line-height: 150%;
     font-weight: 500;
     font-family: "Noto Sans TC", serif;
+    word-wrap: break-word;
 }
 
 .tag{
@@ -467,6 +468,7 @@ h1{
     font-size: 52px;
     word-wrap: break-word;
     line-height: 150%;
+    margin-bottom: 14px;
 }
 
 .hero-content ul{
