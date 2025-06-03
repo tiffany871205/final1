@@ -192,6 +192,7 @@ time{
     display: flex;
     align-items: center;
     height: auto;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -430,6 +431,8 @@ p{
 .header{
     max-width: 375px; 
     height: auto;
+    flex-wrap: wrap;
+    line-height: 150%;
 }
 
 .hero{
@@ -450,13 +453,20 @@ p{
 .hero-content{
     max-width: 100%;
     height: auto;
-    padding-left: 24px;
+    padding-left: 5vw;
     padding-top:24px;
     padding-bottom: 24px;
 }
 
+.hero-content div{
+    max-width: 100%;
+    height: auto;
+}
+
 h1{
     font-size: 52px;
+    word-wrap: break-word;
+    line-height: 150%;
 }
 
 .hero-content ul{
